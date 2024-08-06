@@ -30,5 +30,8 @@ http://127.0.0.1:8000/
 ### Project Structure
 
 CSV_Analyzer : Django app for core functionality.
+
 templates\data_analyzer : HTML templates.
+
 manage.py: Django administrative tool.
+

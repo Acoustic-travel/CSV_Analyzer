@@ -20,12 +20,14 @@ CSV_Analyzer is a Django-based web application that allows users to upload CSV f
 4.numpy
 5.matplotlib or seaborn
 
-### Start the Server
+### Start the Development Server
 
 python manage.py runserver
 
-### Access the App
-http://127.0.0.1:8000/
+### Access the Application
+Open your browser and go to
+http://127.0.0.1:8000/ 
+ to start using the application.
 
 ### Project Structure
 

@@ -16,7 +16,7 @@ CSV_Analyzer is a Django-based web application that allows users to upload CSV f
 ### Requirements
 1.Python 3.x
 
-2.Django
+2.Django 3.x or higher
 
 3.pandas
 

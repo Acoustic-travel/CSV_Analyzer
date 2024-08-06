@@ -33,6 +33,9 @@ Open your browser and go to
 http://127.0.0.1:8000/ 
  to start using the application.
 
+## Sample CSV File
+ A sample CSV file for testing purposes can be found Media \csv_files
+
 ### Project Structure
 
 CSV_Analyzer : Django app for core functionality.

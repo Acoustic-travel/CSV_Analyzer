@@ -1,0 +1,41 @@
+{% extends 'data_analysis/base.html' %}
+
+{% block content %}
+<h2 class="mb-4">Analysis Results</h2>
+
+<ul class="nav nav-tabs" id="resultTabs" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="preview-tab" data-toggle="tab" href="#preview" role="tab">Data Preview</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="stats-tab" data-toggle="tab" href="#stats" role="tab">Summary Statistics</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="missing-tab" data-toggle="tab" href="#missing" role="tab">Missing Values</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="viz-tab" data-toggle="tab" href="#viz" role="tab">Visualizations</a>
+    </li>
+</ul>
+
+<div class="tab-content mt-3" id="resultTabsContent">
+    <div class="tab-pane fade show active" id="preview" role="tabpanel">
+        <h3>Data Preview</h3>
+        {{ preview|safe }}
+    </div>
+    <div class="tab-pane fade" id="stats" role="tabpanel">
+        <h3>Summary Statistics</h3>
+        {{ summary_stats|safe }}
+    </div>
+    <div class="tab-pane fade" id="missing" role="tabpanel">
+        <h3>Missing Values</h3>
+        {{ missing_data|safe }}
+    </div>
+    <div class="tab-pane fade" id="viz" role="tabpanel">
+        <h3>Visualizations</h3>
+        {% for plot in plots %}
+            <img src="data:image/png;base64,{{ plot }}" class="img-fluid mb-3" alt="Distribution plot">
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'data_analysis/base.html' %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to CSV Analyzer</h1>
+    <p class="lead">Upload your CSV file for data analysis and visualization</p>
+    <hr class="my-4">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.file }}
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Upload and Analyze</button>
+    </form>
+</div>
+{% endblock %}

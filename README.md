@@ -4,11 +4,17 @@
 CSV_Analyzer is a Django-based web application that allows users to upload CSV files, perform data analysis using pandas and numpy, and view the results and visualizations directly on the web interface.
 
 ### Features
-1.Upload CSV Files: Users can upload CSV files via a web form.
+## 1.Upload CSV Files: Users can upload CSV files via a web form.
 
-2.Data Analysis: Display the first few rows, summary statistics (mean, median, std), and handle missing values.
+![1722970335919](https://github.com/user-attachments/assets/18dede8c-befa-4ee6-b518-57935eebaa34)
 
-3.Data Visualization: Generate histograms and display them on the web page.
+## 2.Data Analysis: Display the first few rows, summary statistics (mean, median, std), and handle missing values.
+
+![1722970369461](https://github.com/user-attachments/assets/d83aeaaa-69cd-48c2-a412-6a5ea14769e6)
+
+## 3.Data Visualization: Generate histograms and display them on the web page.
+
+![1722970397647](https://github.com/user-attachments/assets/fa871d1e-5d11-40cf-a49f-2bf33c4b2504)
 
 4.User Interface: Simple and clean interface to view results and plots.
 
@@ -46,5 +52,5 @@ templates\data_analyzer : HTML templates.
 
 manage.py: Django administrative tool.
 
-![1722970335919](https://github.com/user-attachments/assets/18dede8c-befa-4ee6-b518-57935eebaa34)
+
 

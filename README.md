@@ -46,3 +46,5 @@ templates\data_analyzer : HTML templates.
 
 manage.py: Django administrative tool.
 
+![1722970335919](https://github.com/user-attachments/assets/18dede8c-befa-4ee6-b518-57935eebaa34)
+
